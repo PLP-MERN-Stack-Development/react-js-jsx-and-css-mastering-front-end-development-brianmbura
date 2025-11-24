@@ -2,7 +2,7 @@
 
 A clean and responsive product browsing interface built with React, Vite, and Tailwind CSS for the PLP MERN Stack Week 3 assignment.
 
-**URL** : https://hatupoitech.netlify.app/
+**Deplyed URL** : https://hatupoitech.netlify.app/
 
 # Project Overview
 
