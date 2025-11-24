@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Light mode - Warm restaurant theme */
+    --background: 35 20% 97%;
+    --foreground: 20 14% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 20 14% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 14% 15%;
+
+    --primary: 25 95% 53%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 35 30% 90%;
+    --secondary-foreground: 20 14% 15%;
+
+    --muted: 35 20% 94%;
+    --muted-foreground: 20 10% 45%;
+
+    --accent: 15 80% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 35 20% 88%;
+    --input: 35 20% 88%;
+    --ring: 25 95% 53%;
+
+    --radius: 0.75rem;
+
+    /* Custom restaurant colors */
+    --hero-gradient-start: 25 95% 53%;
+    --hero-gradient-end: 15 90% 45%;
+    --feature-bg: 35 40% 96%;
+    --success: 142 76% 36%;
+    --warning: 38 92% 50%;
+  }
+
+  .dark {
+    /* Dark mode - Rich restaurant theme */
+    --background: 20 20% 8%;
+    --foreground: 35 15% 95%;
+
+    --card: 20 18% 12%;
+    --card-foreground: 35 15% 95%;
+
+    --popover: 20 18% 12%;
+    --popover-foreground: 35 15% 95%;
+
+    --primary: 25 95% 53%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 20 15% 18%;
+    --secondary-foreground: 35 15% 95%;
+
+    --muted: 20 15% 15%;
+    --muted-foreground: 35 10% 60%;
+
+    --accent: 15 80% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 20 15% 20%;
+    --input: 20 15% 20%;
+    --ring: 25 95% 53%;
+
+    /* Custom dark restaurant colors */
+    --hero-gradient-start: 25 95% 53%;
+    --hero-gradient-end: 15 90% 45%;
+    --feature-bg: 20 18% 14%;
+    --success: 142 76% 36%;
+    --warning: 38 92% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
